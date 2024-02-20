@@ -3,6 +3,7 @@
     <types>
         <members>National_Holidays__c</members>
         <members>Service__mdt</members>
+        <members>Activity</members>
         <name>CustomObject</name>
     </types>
     <types>
