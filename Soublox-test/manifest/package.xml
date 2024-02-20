@@ -19,6 +19,13 @@
         <members>Service.Feriados</members>
         <name>CustomMetadata</name>
     </types>
-  
+    <types>
+        <members>Assign_IsHoliday_in_Task</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Assign_IsHoliday_in_Task</members>
+        <name>FlowDefinition</name>
+    </types>      
     <version>59.0</version>
 </Package>
