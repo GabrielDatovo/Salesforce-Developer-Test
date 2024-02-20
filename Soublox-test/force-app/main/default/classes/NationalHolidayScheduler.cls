@@ -1,5 +1,5 @@
 global without sharing class NationalHolidayScheduler implements Schedulable {
-    global void execute(SchedulableContext sc){NationalHolidayCallout.holidayCallout(String.valueOf(System.today().year()));} //calling the Webservice using the year of today when this job starts
+    global void execute(SchedulableContext sc){NationalHolidayCallout.holidayCallout(String.valueOf(System.today().year()), 0);} //calling the Webservice using the year of today when this job starts
 }
 
 //snippet to schedule the job
