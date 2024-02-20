@@ -5,4 +5,4 @@ global without sharing class NationalHolidayScheduler implements Schedulable {
 //snippet to schedule the job
 /*NationalHolidayScheduler m = new NationalHolidayScheduler();
 String sch = '0 0 0 1 1 ?';
-String jobID = System.schedule('Merge Job', sch, m);*/
+String jobID = System.schedule('National Holiday Callout', sch, m);*/
