@@ -19,6 +19,7 @@ public without sharing class NationalHolidayCallout {
         try {
             if(!Test.isRunningTest()){response = new HTTP().send(request);}
             else{
+                response = new HttpResponse();
                 response.setStatusCode(statusCode);
                 switch on statusCode {
                     when 200 {response.setBody('[{"date": "2021-01-01","name": "Confraternização mundial","type": "national"}]');}
