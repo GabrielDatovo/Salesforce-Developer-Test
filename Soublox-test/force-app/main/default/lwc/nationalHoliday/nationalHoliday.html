@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-tabs_card">
+        <template if:false={isHoliday}>
+            <p>The Next Holiday is {name} and it will be on {date} and we have {remainingDays} day's until it</p>
+        </template>
+        <template if:true={isHoliday}>
+            <p>Enjoy your {name} holiday!</p>
+        </template>
+    </div>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+</template>

@@ -50,7 +50,7 @@ public without sharing class NationalHolidayCallout {
         return [SELECT Endpoint__c, Method__c FROM Service__mdt WHERE DeveloperName  =: developerName];
     }
     //method that convert deserialized response to SObject 
-    public static void parseInformation(List<National_Holidays__c> lNationalHoliday, List<ResponseWrapper> lResponseWrapper) {
+    private static void parseInformation(List<National_Holidays__c> lNationalHoliday, List<ResponseWrapper> lResponseWrapper) {
         National_Holidays__c nationalHoliday;
         for(ResponseWrapper responseWrapper : lResponseWrapper){
             nationalHoliday = new National_Holidays__c();
@@ -61,7 +61,7 @@ public without sharing class NationalHolidayCallout {
         }
     }
     //class to deserialize response
-    public class ResponseWrapper {
+    private class ResponseWrapper {
         String name;
         String date_x;
         String type;
