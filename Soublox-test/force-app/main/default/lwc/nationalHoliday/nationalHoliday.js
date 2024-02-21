@@ -9,7 +9,6 @@ export default class NationalHoliday extends LightningElement {
     @track name;
     @track date;
     @track remainingDays;
-    @track isLoading = true;
 
     connectedCallback () {
         getNationalHoliday()
@@ -30,8 +29,7 @@ export default class NationalHoliday extends LightningElement {
             });
             this.dispatchEvent(toastEvent);
             console.log('error: ' + error);
-        })
-        .finally( () => {this.isLoading = false;});
+        });
     }
 
 }
